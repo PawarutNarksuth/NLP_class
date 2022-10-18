@@ -64,37 +64,37 @@ def match_rule(rules, message):
     # Return the response and phrase
     return response.format(phrase)
 
-# Define respond()
-def respond(message):
-    # Call match_rule
-    response = ____
-    phrase = ____
+# # Define respond()
+# def respond(message):
+#     # Call match_rule
+#     response = ____
+#     phrase = ____
 
-    if '{0}' in response:
-        # Replace the pronouns in the phrase
-        phrase = ____
-        # Include the phrase in the response
-        response = ____
+#     if '{0}' in response:
+#         # Replace the pronouns in the phrase
+#         phrase = ____
+#         # Include the phrase in the response
+#         response = ____
     
-    return response
+#     return response
 
-# Define a function that sends a message to the bot: send_message
-def send_message(message):
+# # Define a function that sends a message to the bot: send_message
+# def send_message(message):
     
-    # Print user_template including the user_message
-    print(user_template.format(message))
+#     # Print user_template including the user_message
+#     print(user_template.format(message))
     
-    # Get the bot's response to the message
-    response = respond(message)
+#     # Get the bot's response to the message
+#     response = respond(message)
     
-    # Print the bot template including the bot's response.
-    print(bot_template.format(response))
+#     # Print the bot template including the bot's response.
+#     print(bot_template.format(response))
 
-# Send the messages
-send_message("do you remember your last birthday")
-send_message("do you think humans should be worried about AI")
-send_message("I want a robot friend")
-send_message("what if you could be anything you wanted")
+# # Send the messages
+# send_message("do you remember your last birthday")
+# send_message("do you think humans should be worried about AI")
+# send_message("I want a robot friend")
+# send_message("what if you could be anything you wanted")
 
 # print(replace_pronouns("my last birthday"))
 # print(replace_pronouns("go with me to Florida"))
