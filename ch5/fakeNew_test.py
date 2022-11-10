@@ -10,7 +10,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_path)
 max_length = 512
 
 def get_prediction(text, convert_to_label=False):
-    # prepare our text into tokenized sequence
+    # prepare our text into tokenizedc sequence
     inputs = tokenizer(text, padding=True, truncation=True, max_length=max_length, return_tensors="pt")
     
     # perform inference to our model

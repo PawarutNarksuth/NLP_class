@@ -1,23 +1,4 @@
 import re
-
-# Define a a dictionary 'keywords'.
-keywords = {'greet': ['hello', 'hi', 'hey'], 
-            'goodbye': ['bye','farewell'], 
-            'thankyou': ['thank', 'thx']}
-
-# Define a dictionary of patterns
-patterns = {}
-# Iterate over the keywords dictionary
-for intent , keys in keywords.items():
-    
-    # Create regular expressions and compile them into pattern objects
-    patterns[intent] = re.compile('|'.join(keys))
-
-responses = {'greet': 'Hello you!:)', 
-            'goodbye': 'goodbye for now',
-            'thankyou': 'you are verywelcome', 
-            'default': 'default message'}
-
 # Create templates
 bot_template = "BOT : {0}"
 user_template = "USER : {0}"

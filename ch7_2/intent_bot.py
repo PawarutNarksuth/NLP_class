@@ -1,20 +1,18 @@
 import re
 
 # Define a a dictionary 'keywords'.
-keywords = {'greet': ['hello', 'hi', 'hey'], 'goodbye': ['bye',
-            'farewell'], 'thankyou': ['thank', 'thx']}
+keywords = {'greet': ['hello', 'hi', 'hey'], 
+            'goodbye': ['bye','farewell'], 
+            'thankyou': ['thank', 'thx']
+            }
 
 # Define a dictionary of patterns
 patterns = {}
+
 # Iterate over the keywords dictionary
 for intent , keys in keywords.items():
-    
     # Create regular expressions and compile them into pattern objects
     patterns[intent] = re.compile('|'.join(keys))
-    
-
-# Print the patterns
-#print(patterns)
 
 responses = {'greet': 'Hello you!:)', 
             'goodbye': 'goodbye for now',
@@ -40,7 +38,7 @@ def match_intent(message):
 def respond(message):
     # Call the match_intent function
     intent = match_intent(message)
-    
+
     # Fall back to the default response
     key = "default"
     

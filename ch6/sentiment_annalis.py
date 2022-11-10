@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-#nltk.download('vader_lexicon')
+#nltk.download('vade"r_lexicon')
 
 #df = pd.read_excel (r'Path where the Excel file is stored\File name.xlsx')
-df = pd.read_excel (r".\\ch6\\TeamHealthRawDataForDemo.xlsx")
+df = pd.read_excel (".\\ch6\\TeamHealthRawDataForDemo.xlsx")
 
 # adding an row_id field to the dataframe, which will be useful for joining later
 df["row_id"] = df.index + 1
