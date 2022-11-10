@@ -15,7 +15,7 @@ import nltk
 #nltk.download('wordnet')
 
 # load the dataset
-news_d = pd.read_csv('.\Model\\train.csv')
+news_d = pd.read_csv('./ch5/Model/train.csv')
 
 column_n = ['id', 'title', 'author', 'text', 'label']
 remove_c = ['id','author']

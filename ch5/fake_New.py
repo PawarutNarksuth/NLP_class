@@ -8,7 +8,7 @@ import matplotlib.pylab as plt
 import seaborn as sns
 
 # load the dataset
-news_d = pd.read_csv('./train.csv')
+news_d = pd.read_csv('./ch5/train.csv')
 
 '''print("Shape of News data:", news_d.shape)
 print("News data columns", news_d.columns)'''

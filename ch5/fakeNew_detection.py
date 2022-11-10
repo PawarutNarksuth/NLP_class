@@ -9,7 +9,7 @@ import random
 import pandas as pd 
 
 # load the dataset
-news_d = pd.read_csv('./train.csv')
+news_d = pd.read_csv('./ch5/train.csv')
 
 def set_seed(seed: int):
     random.seed(seed)
